@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD23802016F2F06B0044AA1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD23801F16F2F06B0044AA1B /* UIKit.framework */; };
+		BD23802216F2F06B0044AA1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD23802116F2F06B0044AA1B /* Foundation.framework */; };
+		BD23802416F2F06B0044AA1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD23802316F2F06B0044AA1B /* CoreGraphics.framework */; };
+		BD23802A16F2F06B0044AA1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD23802816F2F06B0044AA1B /* InfoPlist.strings */; };
+		BD23802C16F2F06B0044AA1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23802B16F2F06B0044AA1B /* main.m */; };
+		BD23803016F2F06C0044AA1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23802F16F2F06C0044AA1B /* AppDelegate.m */; };
+		BD23803216F2F06C0044AA1B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BD23803116F2F06C0044AA1B /* Default.png */; };
+		BD23803416F2F06C0044AA1B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD23803316F2F06C0044AA1B /* Default@2x.png */; };
+		BD23803616F2F06C0044AA1B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD23803516F2F06C0044AA1B /* Default-568h@2x.png */; };
+		BD23803916F2F06C0044AA1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23803816F2F06C0044AA1B /* ViewController.m */; };
+		BD23803C16F2F06C0044AA1B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD23803A16F2F06C0044AA1B /* ViewController.xib */; };
+		BD23807216F2F0C00044AA1B /* AuthenticationCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23804516F2F0C00044AA1B /* AuthenticationCredential.m */; };
+		BD23807316F2F0C00044AA1B /* CloudStorageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23804816F2F0C00044AA1B /* CloudStorageClient.m */; };
+		BD23807416F2F0C00044AA1B /* TableFetchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23804A16F2F0C00044AA1B /* TableFetchRequest.m */; };
+		BD23807516F2F0C00044AA1B /* Blob.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23804D16F2F0C00044AA1B /* Blob.m */; };
+		BD23807616F2F0C00044AA1B /* BlobContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23804F16F2F0C00044AA1B /* BlobContainer.m */; };
+		BD23807716F2F0C00044AA1B /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23805116F2F0C00044AA1B /* Queue.m */; };
+		BD23807816F2F0C00044AA1B /* QueueMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23805316F2F0C00044AA1B /* QueueMessage.m */; };
+		BD23807916F2F0C00044AA1B /* TableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23805516F2F0C00044AA1B /* TableEntity.m */; };
+		BD23807A16F2F0C00044AA1B /* SimpleBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23805A16F2F0C00044AA1B /* SimpleBase64.m */; };
+		BD23807B16F2F0C00044AA1B /* CloudURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23805C16F2F0C00044AA1B /* CloudURLRequest.m */; };
+		BD23807C16F2F0C00044AA1B /* AtomPubEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23806016F2F0C00044AA1B /* AtomPubEntry.m */; };
+		BD23807D16F2F0C00044AA1B /* BlobParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23806216F2F0C00044AA1B /* BlobParser.m */; };
+		BD23807E16F2F0C00044AA1B /* ContainerParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23806416F2F0C00044AA1B /* ContainerParser.m */; };
+		BD23807F16F2F0C00044AA1B /* QueueMessageParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23806616F2F0C00044AA1B /* QueueMessageParser.m */; };
+		BD23808016F2F0C00044AA1B /* QueueParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23806816F2F0C00044AA1B /* QueueParser.m */; };
+		BD23808116F2F0C00044AA1B /* XmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23806A16F2F0C00044AA1B /* XmlHelper.m */; };
+		BD23808216F2F0C00044AA1B /* AzureFilterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23806D16F2F0C00044AA1B /* AzureFilterBuilder.m */; };
+		BD23808316F2F0C00044AA1B /* PredicateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23806F16F2F0C00044AA1B /* PredicateParser.m */; };
+		BD23808416F2F0C00044AA1B /* PredicateParserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD23807116F2F0C00044AA1B /* PredicateParserAppDelegate.m */; };
+		BD23808616F2F0F20044AA1B /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD23808516F2F0F20044AA1B /* libxml2.2.dylib */; };
+		BD8A196A16F6E4FD0028CD3E /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = BD8A196916F6E4FD0028CD3E /* image.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD23801B16F2F06B0044AA1B /* BlobExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlobExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD23801F16F2F06B0044AA1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BD23802116F2F06B0044AA1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BD23802316F2F06B0044AA1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BD23802716F2F06B0044AA1B /* BlobExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlobExample-Info.plist"; sourceTree = "<group>"; };
+		BD23802916F2F06B0044AA1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD23802B16F2F06B0044AA1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD23802D16F2F06C0044AA1B /* BlobExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlobExample-Prefix.pch"; sourceTree = "<group>"; };
+		BD23802E16F2F06C0044AA1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD23802F16F2F06C0044AA1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD23803116F2F06C0044AA1B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BD23803316F2F06C0044AA1B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BD23803516F2F06C0044AA1B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BD23803716F2F06C0044AA1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD23803816F2F06C0044AA1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BD23803B16F2F06C0044AA1B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		BD23804416F2F0C00044AA1B /* AuthenticationCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationCredential.h; sourceTree = "<group>"; };
+		BD23804516F2F0C00044AA1B /* AuthenticationCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationCredential.m; sourceTree = "<group>"; };
+		BD23804716F2F0C00044AA1B /* CloudStorageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudStorageClient.h; sourceTree = "<group>"; };
+		BD23804816F2F0C00044AA1B /* CloudStorageClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudStorageClient.m; sourceTree = "<group>"; };
+		BD23804916F2F0C00044AA1B /* TableFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableFetchRequest.h; sourceTree = "<group>"; };
+		BD23804A16F2F0C00044AA1B /* TableFetchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableFetchRequest.m; sourceTree = "<group>"; };
+		BD23804C16F2F0C00044AA1B /* Blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blob.h; sourceTree = "<group>"; };
+		BD23804D16F2F0C00044AA1B /* Blob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blob.m; sourceTree = "<group>"; };
+		BD23804E16F2F0C00044AA1B /* BlobContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobContainer.h; sourceTree = "<group>"; };
+		BD23804F16F2F0C00044AA1B /* BlobContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlobContainer.m; sourceTree = "<group>"; };
+		BD23805016F2F0C00044AA1B /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		BD23805116F2F0C00044AA1B /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		BD23805216F2F0C00044AA1B /* QueueMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueMessage.h; sourceTree = "<group>"; };
+		BD23805316F2F0C00044AA1B /* QueueMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueMessage.m; sourceTree = "<group>"; };
+		BD23805416F2F0C00044AA1B /* TableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableEntity.h; sourceTree = "<group>"; };
+		BD23805516F2F0C00044AA1B /* TableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableEntity.m; sourceTree = "<group>"; };
+		BD23805716F2F0C00044AA1B /* AuthenticationCredential+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AuthenticationCredential+Private.h"; sourceTree = "<group>"; };
+		BD23805916F2F0C00044AA1B /* SimpleBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleBase64.h; sourceTree = "<group>"; };
+		BD23805A16F2F0C00044AA1B /* SimpleBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleBase64.m; sourceTree = "<group>"; };
+		BD23805B16F2F0C00044AA1B /* CloudURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudURLRequest.h; sourceTree = "<group>"; };
+		BD23805C16F2F0C00044AA1B /* CloudURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudURLRequest.m; sourceTree = "<group>"; };
+		BD23805D16F2F0C00044AA1B /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
+		BD23805F16F2F0C00044AA1B /* AtomPubEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtomPubEntry.h; sourceTree = "<group>"; };
+		BD23806016F2F0C00044AA1B /* AtomPubEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtomPubEntry.m; sourceTree = "<group>"; };
+		BD23806116F2F0C00044AA1B /* BlobParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobParser.h; sourceTree = "<group>"; };
+		BD23806216F2F0C00044AA1B /* BlobParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlobParser.m; sourceTree = "<group>"; };
+		BD23806316F2F0C00044AA1B /* ContainerParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerParser.h; sourceTree = "<group>"; };
+		BD23806416F2F0C00044AA1B /* ContainerParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerParser.m; sourceTree = "<group>"; };
+		BD23806516F2F0C00044AA1B /* QueueMessageParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueMessageParser.h; sourceTree = "<group>"; };
+		BD23806616F2F0C00044AA1B /* QueueMessageParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueMessageParser.m; sourceTree = "<group>"; };
+		BD23806716F2F0C00044AA1B /* QueueParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueParser.h; sourceTree = "<group>"; };
+		BD23806816F2F0C00044AA1B /* QueueParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueParser.m; sourceTree = "<group>"; };
+		BD23806916F2F0C00044AA1B /* XmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlHelper.h; sourceTree = "<group>"; };
+		BD23806A16F2F0C00044AA1B /* XmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlHelper.m; sourceTree = "<group>"; };
+		BD23806C16F2F0C00044AA1B /* AzureFilterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AzureFilterBuilder.h; sourceTree = "<group>"; };
+		BD23806D16F2F0C00044AA1B /* AzureFilterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AzureFilterBuilder.m; sourceTree = "<group>"; };
+		BD23806E16F2F0C00044AA1B /* PredicateParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateParser.h; sourceTree = "<group>"; };
+		BD23806F16F2F0C00044AA1B /* PredicateParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateParser.m; sourceTree = "<group>"; };
+		BD23807016F2F0C00044AA1B /* PredicateParserAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateParserAppDelegate.h; sourceTree = "<group>"; };
+		BD23807116F2F0C00044AA1B /* PredicateParserAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateParserAppDelegate.m; sourceTree = "<group>"; };
+		BD23808516F2F0F20044AA1B /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		BD8A196916F6E4FD0028CD3E /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD23801816F2F06B0044AA1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD23808616F2F0F20044AA1B /* libxml2.2.dylib in Frameworks */,
+				BD23802016F2F06B0044AA1B /* UIKit.framework in Frameworks */,
+				BD23802216F2F06B0044AA1B /* Foundation.framework in Frameworks */,
+				BD23802416F2F06B0044AA1B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD23801016F2F06B0044AA1B = {
+			isa = PBXGroup;
+			children = (
+				BD23804216F2F0C00044AA1B /* Library */,
+				BD23802516F2F06B0044AA1B /* BlobExample */,
+				BD23801E16F2F06B0044AA1B /* Frameworks */,
+				BD23801C16F2F06B0044AA1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD23801C16F2F06B0044AA1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD23801B16F2F06B0044AA1B /* BlobExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD23801E16F2F06B0044AA1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD23808516F2F0F20044AA1B /* libxml2.2.dylib */,
+				BD23801F16F2F06B0044AA1B /* UIKit.framework */,
+				BD23802116F2F06B0044AA1B /* Foundation.framework */,
+				BD23802316F2F06B0044AA1B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD23802516F2F06B0044AA1B /* BlobExample */ = {
+			isa = PBXGroup;
+			children = (
+				BD23802E16F2F06C0044AA1B /* AppDelegate.h */,
+				BD23802F16F2F06C0044AA1B /* AppDelegate.m */,
+				BD23803716F2F06C0044AA1B /* ViewController.h */,
+				BD23803816F2F06C0044AA1B /* ViewController.m */,
+				BD23803A16F2F06C0044AA1B /* ViewController.xib */,
+				BD23802616F2F06B0044AA1B /* Supporting Files */,
+			);
+			path = BlobExample;
+			sourceTree = "<group>";
+		};
+		BD23802616F2F06B0044AA1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD8A196916F6E4FD0028CD3E /* image.png */,
+				BD23802716F2F06B0044AA1B /* BlobExample-Info.plist */,
+				BD23802816F2F06B0044AA1B /* InfoPlist.strings */,
+				BD23802B16F2F06B0044AA1B /* main.m */,
+				BD23802D16F2F06C0044AA1B /* BlobExample-Prefix.pch */,
+				BD23803116F2F06C0044AA1B /* Default.png */,
+				BD23803316F2F06C0044AA1B /* Default@2x.png */,
+				BD23803516F2F06C0044AA1B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD23804216F2F0C00044AA1B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BD23804316F2F0C00044AA1B /* Authentication */,
+				BD23804616F2F0C00044AA1B /* Cloud Storage */,
+				BD23804B16F2F0C00044AA1B /* Model */,
+				BD23805616F2F0C00044AA1B /* Private */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BD23804316F2F0C00044AA1B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BD23804416F2F0C00044AA1B /* AuthenticationCredential.h */,
+				BD23804516F2F0C00044AA1B /* AuthenticationCredential.m */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BD23804616F2F0C00044AA1B /* Cloud Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BD23804716F2F0C00044AA1B /* CloudStorageClient.h */,
+				BD23804816F2F0C00044AA1B /* CloudStorageClient.m */,
+				BD23804916F2F0C00044AA1B /* TableFetchRequest.h */,
+				BD23804A16F2F0C00044AA1B /* TableFetchRequest.m */,
+			);
+			path = "Cloud Storage";
+			sourceTree = "<group>";
+		};
+		BD23804B16F2F0C00044AA1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD23804C16F2F0C00044AA1B /* Blob.h */,
+				BD23804D16F2F0C00044AA1B /* Blob.m */,
+				BD23804E16F2F0C00044AA1B /* BlobContainer.h */,
+				BD23804F16F2F0C00044AA1B /* BlobContainer.m */,
+				BD23805016F2F0C00044AA1B /* Queue.h */,
+				BD23805116F2F0C00044AA1B /* Queue.m */,
+				BD23805216F2F0C00044AA1B /* QueueMessage.h */,
+				BD23805316F2F0C00044AA1B /* QueueMessage.m */,
+				BD23805416F2F0C00044AA1B /* TableEntity.h */,
+				BD23805516F2F0C00044AA1B /* TableEntity.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD23805616F2F0C00044AA1B /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				BD23805716F2F0C00044AA1B /* AuthenticationCredential+Private.h */,
+				BD23805816F2F0C00044AA1B /* Base64 */,
+				BD23805B16F2F0C00044AA1B /* CloudURLRequest.h */,
+				BD23805C16F2F0C00044AA1B /* CloudURLRequest.m */,
+				BD23805D16F2F0C00044AA1B /* NSString+URLEncode.h */,
+				BD23805E16F2F0C00044AA1B /* Parser */,
+				BD23806B16F2F0C00044AA1B /* PredicateConverter */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		BD23805816F2F0C00044AA1B /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				BD23805916F2F0C00044AA1B /* SimpleBase64.h */,
+				BD23805A16F2F0C00044AA1B /* SimpleBase64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		BD23805E16F2F0C00044AA1B /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				BD23805F16F2F0C00044AA1B /* AtomPubEntry.h */,
+				BD23806016F2F0C00044AA1B /* AtomPubEntry.m */,
+				BD23806116F2F0C00044AA1B /* BlobParser.h */,
+				BD23806216F2F0C00044AA1B /* BlobParser.m */,
+				BD23806316F2F0C00044AA1B /* ContainerParser.h */,
+				BD23806416F2F0C00044AA1B /* ContainerParser.m */,
+				BD23806516F2F0C00044AA1B /* QueueMessageParser.h */,
+				BD23806616F2F0C00044AA1B /* QueueMessageParser.m */,
+				BD23806716F2F0C00044AA1B /* QueueParser.h */,
+				BD23806816F2F0C00044AA1B /* QueueParser.m */,
+				BD23806916F2F0C00044AA1B /* XmlHelper.h */,
+				BD23806A16F2F0C00044AA1B /* XmlHelper.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		BD23806B16F2F0C00044AA1B /* PredicateConverter */ = {
+			isa = PBXGroup;
+			children = (
+				BD23806C16F2F0C00044AA1B /* AzureFilterBuilder.h */,
+				BD23806D16F2F0C00044AA1B /* AzureFilterBuilder.m */,
+				BD23806E16F2F0C00044AA1B /* PredicateParser.h */,
+				BD23806F16F2F0C00044AA1B /* PredicateParser.m */,
+				BD23807016F2F0C00044AA1B /* PredicateParserAppDelegate.h */,
+				BD23807116F2F0C00044AA1B /* PredicateParserAppDelegate.m */,
+			);
+			path = PredicateConverter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD23801A16F2F06B0044AA1B /* BlobExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD23803F16F2F06C0044AA1B /* Build configuration list for PBXNativeTarget "BlobExample" */;
+			buildPhases = (
+				BD23801716F2F06B0044AA1B /* Sources */,
+				BD23801816F2F06B0044AA1B /* Frameworks */,
+				BD23801916F2F06B0044AA1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlobExample;
+			productName = BlobExample;
+			productReference = BD23801B16F2F06B0044AA1B /* BlobExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD23801216F2F06B0044AA1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "umar chhipa";
+			};
+			buildConfigurationList = BD23801516F2F06B0044AA1B /* Build configuration list for PBXProject "BlobExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BD23801016F2F06B0044AA1B;
+			productRefGroup = BD23801C16F2F06B0044AA1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD23801A16F2F06B0044AA1B /* BlobExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD23801916F2F06B0044AA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD23802A16F2F06B0044AA1B /* InfoPlist.strings in Resources */,
+				BD23803216F2F06C0044AA1B /* Default.png in Resources */,
+				BD23803416F2F06C0044AA1B /* Default@2x.png in Resources */,
+				BD23803616F2F06C0044AA1B /* Default-568h@2x.png in Resources */,
+				BD23803C16F2F06C0044AA1B /* ViewController.xib in Resources */,
+				BD8A196A16F6E4FD0028CD3E /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD23801716F2F06B0044AA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD23802C16F2F06B0044AA1B /* main.m in Sources */,
+				BD23803016F2F06C0044AA1B /* AppDelegate.m in Sources */,
+				BD23803916F2F06C0044AA1B /* ViewController.m in Sources */,
+				BD23807216F2F0C00044AA1B /* AuthenticationCredential.m in Sources */,
+				BD23807316F2F0C00044AA1B /* CloudStorageClient.m in Sources */,
+				BD23807416F2F0C00044AA1B /* TableFetchRequest.m in Sources */,
+				BD23807516F2F0C00044AA1B /* Blob.m in Sources */,
+				BD23807616F2F0C00044AA1B /* BlobContainer.m in Sources */,
+				BD23807716F2F0C00044AA1B /* Queue.m in Sources */,
+				BD23807816F2F0C00044AA1B /* QueueMessage.m in Sources */,
+				BD23807916F2F0C00044AA1B /* TableEntity.m in Sources */,
+				BD23807A16F2F0C00044AA1B /* SimpleBase64.m in Sources */,
+				BD23807B16F2F0C00044AA1B /* CloudURLRequest.m in Sources */,
+				BD23807C16F2F0C00044AA1B /* AtomPubEntry.m in Sources */,
+				BD23807D16F2F0C00044AA1B /* BlobParser.m in Sources */,
+				BD23807E16F2F0C00044AA1B /* ContainerParser.m in Sources */,
+				BD23807F16F2F0C00044AA1B /* QueueMessageParser.m in Sources */,
+				BD23808016F2F0C00044AA1B /* QueueParser.m in Sources */,
+				BD23808116F2F0C00044AA1B /* XmlHelper.m in Sources */,
+				BD23808216F2F0C00044AA1B /* AzureFilterBuilder.m in Sources */,
+				BD23808316F2F0C00044AA1B /* PredicateParser.m in Sources */,
+				BD23808416F2F0C00044AA1B /* PredicateParserAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD23802816F2F06B0044AA1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD23802916F2F06B0044AA1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BD23803A16F2F06C0044AA1B /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD23803B16F2F06C0044AA1B /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD23803D16F2F06C0044AA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD23803E16F2F06C0044AA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD23804016F2F06C0044AA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlobExample/BlobExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
+				INFOPLIST_FILE = "BlobExample/BlobExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BD23804116F2F06C0044AA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlobExample/BlobExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
+				INFOPLIST_FILE = "BlobExample/BlobExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD23801516F2F06B0044AA1B /* Build configuration list for PBXProject "BlobExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD23803D16F2F06C0044AA1B /* Debug */,
+				BD23803E16F2F06C0044AA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD23803F16F2F06C0044AA1B /* Build configuration list for PBXNativeTarget "BlobExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD23804016F2F06C0044AA1B /* Debug */,
+				BD23804116F2F06C0044AA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD23801216F2F06B0044AA1B /* Project object */;
+}
